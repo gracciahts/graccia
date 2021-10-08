@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FORM PENDAFTARAN ORGANISASI</title>
+</head>
+<body>
+    <center>
+        <h1>FORM PENDAFTARAN ORGANISASI
+            BEM (BADAN EKSEKUTIF MAHASISWA)
+        </h1>
+        <input type="image" src="LOGOBEM.png">
+    </center>
+    <form>
+        <fieldset>
+            <legend>EMAIL</legend>
+            <label for="email">Email &emsp; &emsp;:</label>
+            <input type="email" autofocus name="email" id="email" required="required">
+            <br><br>
+            <label for="password">Password&emsp;:</label>
+            <input type="password" placeholder="Masukkan Password" name="nama" size="25" maxlength="9" id="password"
+            required="required" pattern="[A-Z]{1,}[a-z]{1,}[0-9]{1,}" title="Password Harus Ada Minimal 1 Angka dan Huruf Kapital">
+            <br>
+        </fieldset
+        <table>
+            <tr><br>
+                <td>Nama &emsp;&emsp;&emsp; :</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <br><br>
+                <td>Tanggal Lahir :</td>
+                <td><input type="date" name="tanggal lahir"></td>
+            </tr>
+            <tr>
+                <br><br>
+                <td>Jenis Kelamin :</td>
+                <td><input type="radio" name="Jenis_kelamin" value="L"> laki-laki 
+                    <input type="radio" name="Jenis_kelamin" value="P"> Perempuan 
+                <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Agama&emsp;&emsp;&emsp;:</td>
+                <td><select name="agama" >
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="budha">Budha</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="konghucu">Konghucu</option>
+                </select>
+                <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat&emsp;&emsp;&emsp;:</td>
+                <td><textarea name="alamat"></textarea></td><br><br>
+            </tr>
+            <tr>
+                <td>Photo(3X4)&emsp; :</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <br><br>
+                <td>Jurusan&emsp;&emsp;&emsp;:</td>
+                <td><input type="radio" name="Jurusan" value="INFORMATIKA"> INFORMATIKA
+                    <input type="radio" name="Jurusan" value="ELEKTRO"> ELEKTRO
+                <br><br>
+                </td>
+        </table>
+        <center>
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+            <input type="button" name="button" value="Kembali">
+        </center>
+    </form>
+</body>
+</html>
